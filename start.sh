@@ -1,0 +1,6 @@
+echo Waking up mongo...
+mongod --fork --syslog
+
+echo Launching dos...
+cd dos
+NODE_PATH=. DEBUG=democracyos* node index.js
